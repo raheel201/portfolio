@@ -39,7 +39,7 @@ const skillsData = {
     ],
 };
 
-const SkillCard = ({ skill, index }: { skill: any, index: number }) => {
+const SkillCard = ({ skill, index }: { skill: { icon: React.ReactNode; name: string; level: number; color: string }, index: number }) => {
   return (
     <motion.div
       className="relative group"

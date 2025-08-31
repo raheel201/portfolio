@@ -2,7 +2,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { FaAws } from 'react-icons/fa';
-import { Code, Database, Award } from 'lucide-react';
+import { Code, Award } from 'lucide-react';
 
 const certifications = [
   { icon: <FaAws />, title: "AWS Certified Developer – Associate" },

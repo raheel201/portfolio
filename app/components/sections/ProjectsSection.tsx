@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
 import { FaGithub } from 'react-icons/fa';
-import { ExternalLink, Code, Database, Zap } from 'lucide-react';
+import { Code, Database, Zap } from 'lucide-react';
 import { useRef } from 'react';
 
 const projects = [

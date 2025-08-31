@@ -88,7 +88,7 @@ const HeroSection = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
         >
-          "Building scalable, high-performance web applications with React, Next.js, and modern web technologies."
+          &quot;Building scalable, high-performance web applications with React, Next.js, and modern web technologies.&quot;
         </motion.p>
 
         <motion.div
