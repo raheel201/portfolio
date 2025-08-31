@@ -1,0 +1,132 @@
+/* app/globals.css */
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #697565;
+  --color-brand-secondary: #ECDFCC;
+  --color-dark-primary: #181C14;
+  --color-dark-secondary: #3C3D37;
+  
+  --animate-gradient-wave: gradient-wave 8s ease infinite;
+  --animate-subtle-glow: subtle-glow 4s ease-in-out infinite;
+}
+
+@keyframes gradient-wave {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes subtle-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px 0px rgba(105, 117, 101, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(236, 223, 204, 0.3);
+  }
+}
+
+body {
+  background-color: #181C14;
+  color: #ECDFCC;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #181C14;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #697565, #ECDFCC);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ECDFCC, #697565);
+  box-shadow: 0 0 10px rgba(105, 117, 101, 0.5);
+}
+
+/* Firefox scrollbar */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #697565 #181C14;
+}
+
+.gradient-background {
+  background: linear-gradient(to right, var(--color-brand-primary), var(--color-brand-secondary), var(--color-dark-secondary));
+  background-size: 200% 200%;
+}
+
+.gradient-text {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(45deg, #697565, #ECDFCC, #697565, #3C3D37);
+  background-size: 300% 300%;
+  animation: gradient-shift 4s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading animation for images */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* Backdrop blur support */
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+}
+
+/* Custom button hover effects */
+.btn-primary, .btn-secondary {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before, .btn-secondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover::before, .btn-secondary:hover::before {
+  left: 100%;
+}
+
+/* Glow effect for interactive elements */
+.glow-on-hover {
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 20px rgba(105, 117, 101, 0.6);
+}
