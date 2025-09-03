@@ -23,14 +23,14 @@ const HeroSection = () => {
           &quot;Building scalable, high-performance web applications with React, Next.js, and modern web technologies.&quot;
         </p>
 
-        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mt-8 px-4">
-          <a href="mailto:raheel.nazeer.ahmed.07@gmail.com" className="btn-primary">
+        <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mt-8 px-4 items-start">
+          <a href="mailto:raheel.nazeer.ahmed.07@gmail.com" className="btn-primary flex gap-4 items-center">
             <FaEnvelope /> Hire Me
           </a>
-          <a href="/Raheel_Nazeer_Ahmed_Resume.pdf" download className="btn-secondary">
+          <a href="/Raheel_Nazeer_Ahmed_Resume.pdf" download className="btn-secondary flex gap-4 items-center">
             <FaFileDownload /> View Resume
           </a>
-          <a href="https://github.com/raheel201" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+          <a href="https://github.com/raheel201" target="_blank" rel="noopener noreferrer" className="btn-secondary flex gap-4 items-center">
             <FaGithub /> GitHub
           </a>
         </div>

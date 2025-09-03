@@ -28,7 +28,7 @@ const AboutSection = () => {
         }}
         transition={{ duration: 6, repeat: Infinity }}
       />
-      <div className="flex justify-center mx-72 items-center">
+      <div className="max-w-5xl mx-auto flex justify-center items-center">
         <motion.div
           className="md:col-span-2 text-center"
           initial={{ opacity: 0, x: 50 }}
