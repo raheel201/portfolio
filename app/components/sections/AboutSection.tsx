@@ -1,21 +1,12 @@
 // app/components/sections/AboutSection.tsx
 'use client';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import Image from 'next/image';
-import { useRef } from 'react';
+import { motion } from 'framer-motion';
 import ParallaxBackground from '../ParallaxBackground';
 
 const AboutSection = () => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"]
-  });
-  
-  const y = useTransform(scrollYProgress, [0, 1], [-50, 50]);
 
   return (
-    <section ref={ref} id="about" className="relative w-full py-16 sm:py-20 lg:py-32 px-4 bg-black/80 backdrop-blur-sm overflow-hidden">
+    <section id="about" className="relative w-full py-16 sm:py-20 lg:py-32 px-4 bg-black/80 backdrop-blur-sm overflow-hidden">
       <ParallaxBackground speed={-0.3}>
         <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black -z-10" />
       </ParallaxBackground>

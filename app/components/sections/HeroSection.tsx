@@ -1,6 +1,5 @@
 // app/components/sections/HeroSection.tsx
 'use client';
-import { motion } from 'framer-motion';
 import { FaGithub, FaFileDownload, FaEnvelope } from 'react-icons/fa';
 import SpaceBackground from '../SpaceBackground';
 
