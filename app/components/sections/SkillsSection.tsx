@@ -110,7 +110,7 @@ const SkillsSection = () => {
   const backgroundY = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
   return (
-    <section ref={ref} id="skills" className="relative w-full py-20 lg:py-32 px-4 bg-dark-primary overflow-hidden">
+    <section ref={ref} id="skills" className="relative w-full py-20 lg:py-32 px-4 overflow-hidden">
       {/* Animated background elements */}
       <motion.div
         className="absolute top-0 left-0 w-full h-full"

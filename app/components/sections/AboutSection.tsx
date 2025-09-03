@@ -37,37 +37,9 @@ const AboutSection = () => {
         }}
         transition={{ duration: 6, repeat: Infinity }}
       />
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
+      <div className="flex justify-center mx-72 items-center">
         <motion.div
-          className="md:col-span-1 flex justify-center"
-          initial={{ opacity: 0, scale: 0.8, rotateY: -90 }}
-          whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
-          style={{ y }}
-        >
-          <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-2xl border-4 border-brand-primary">
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-brand-primary/20 to-brand-secondary/20 rounded-full"
-              animate={{ rotate: 360 }}
-              transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-            />
-            <Image
-              src="/profile-photo.jpeg"
-              alt="Raheel Nazeer Ahmed"
-              layout="fill"
-              objectFit="cover"
-              className="transform hover:scale-110 transition-transform duration-500 relative z-10"
-            />
-            <motion.div
-              className="absolute inset-0 border-2 border-brand-primary/50 rounded-full"
-              animate={{ scale: [1, 1.1, 1], opacity: [0.5, 0.8, 0.5] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            />
-          </div>
-        </motion.div>
-        <motion.div
-          className="md:col-span-2 text-center md:text-left"
+          className="md:col-span-2 text-center"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -79,7 +51,7 @@ const AboutSection = () => {
             and NodeJS. Proven ability to increase performance and enhance user engagement through strategic code implementation and feature
             development.
           </p>
-          <div className="flex flex-wrap justify-center md:justify-start gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
               <span className="skill-badge">2+ Years Experience</span>
               <span className="skill-badge">React & Next.js Expert</span>
               <span className="skill-badge">AWS Certified</span>
